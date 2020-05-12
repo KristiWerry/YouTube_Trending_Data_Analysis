@@ -1,0 +1,3 @@
+#testing if common channels occur in multiple datasets
+new = pd.DataFrame(data2.channelId.isin(channels.channel_id).astype(int))
+new.channelId.value_counts()
